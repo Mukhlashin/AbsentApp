@@ -4,4 +4,26 @@
     <string name="login_to_enter_absentapp">Login to enter AbsentApp</string>
     <string name="password">Password</string>
     <string name="email">Email</string>
+    <string name="profile">Profile</string>
+    <string name="log_absensi">Log absensi</string>
+    <string name="example_user">Jhon Doe</string>
+    <string name="example_user_info">jhon.doe@icload.com \nXII RPL 1</string>
+    <string name="absensi">Absensi</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="logout">Logout</string>
+
+    <string-array name="dumy_log_date">
+        <item>12 Januari 2020</item>
+        <item>13 Januari 2020</item>
+    </string-array>
+
+    <string-array name="dumy_log_in">
+        <item>12:04</item>
+        <item>12:02</item>
+    </string-array>
+
+    <string-array name="dumy_log_out">
+        <item>19:02</item>
+        <item>19:02</item>
+    </string-array>
 </resources>
