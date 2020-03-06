@@ -20,6 +20,7 @@ import kotlinx.android.synthetic.main.activity_login.*
 import org.json.JSONObject
 
 class LoginActivity : AppCompatActivity() {
+
     lateinit var editor: SharedPreferences.Editor
     lateinit var myPrefs: SharedPreferences
 
