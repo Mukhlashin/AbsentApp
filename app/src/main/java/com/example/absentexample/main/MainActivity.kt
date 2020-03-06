@@ -10,7 +10,7 @@ import com.example.absentexample.main.adapter.MainPagerAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 import android.view.WindowManager
 import android.os.Build
-
+import com.androidnetworking.AndroidNetworking
 
 
 class MainActivity : AppCompatActivity() {
@@ -21,7 +21,12 @@ class MainActivity : AppCompatActivity() {
 
         transparantStatusBar()
         setupPager()
+        singleUserInquiry()
 
+    }
+
+    private fun singleUserInquiry() {
+        AndroidNetworking.get("http://192.168.43.175/absensi/public/api/user/")
     }
 
     fun setupPager(){
