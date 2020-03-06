@@ -21,13 +21,8 @@ class MainActivity : AppCompatActivity() {
 
         transparantStatusBar()
         setupPager()
-        singleUserInquiry()
-
     }
 
-    private fun singleUserInquiry() {
-        AndroidNetworking.get("http://192.168.43.175/absensi/public/api/user/")
-    }
 
     fun setupPager(){
         var pagerAdapter = MainPagerAdapter(supportFragmentManager, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT)
