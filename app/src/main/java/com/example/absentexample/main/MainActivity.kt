@@ -77,6 +77,11 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    fun setUserInfo(name: String?, info: String?){
+        txt_name.text = name
+        txt_info.text = info
+    }
+
 
 
 }

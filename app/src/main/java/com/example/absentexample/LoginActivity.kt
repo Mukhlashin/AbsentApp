@@ -14,6 +14,7 @@ import com.androidnetworking.AndroidNetworking
 import com.androidnetworking.common.Priority
 import com.androidnetworking.error.ANError
 import com.androidnetworking.interfaces.JSONObjectRequestListener
+import com.example.absentexample.BaseApp.Companion.BASE_URL
 import com.example.absentexample.main.MainActivity
 import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.activity_login.*
@@ -47,7 +48,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         if(!edt_email.text.toString().isEmpty() && !edt_password.text.toString().isEmpty()){
-            AndroidNetworking.post("http:/192.168.43.241/absensi/public/api/login")
+            AndroidNetworking.post("$BASE_URL/absensi/public/api/login")
                 .addBodyParameter("email", edt_email.text.toString())
                 .addBodyParameter("password", edt_password.text.toString())
                 .setPriority(Priority.HIGH)
